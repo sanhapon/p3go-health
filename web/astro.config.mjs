@@ -10,6 +10,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://example.com',
+    site: 'https://sanhapon.github.io',
+    base: '/p3go-health',
     integrations: [mdx(), sitemap(), react(), tailwind()],
+
 });
