@@ -1,7 +1,7 @@
 ---
 title: 'เริ่มต้นอาหารเสริมสำหรับลูกน้อย ในช่วงอายุ 4-12 เดือน'
 description: 'อาหารเสริมสำหรับลูกน้อย ในช่วงอายุ 4-12 เดือน'
-pubDate: 'September 10 2024'
+pubDate: '2024-09-12'
 heroImage: '/blog-placeholder-3.jpg'
 ---
 
