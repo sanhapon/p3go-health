@@ -7,15 +7,14 @@ import GoogleAnalytics from './GoogleAnalytic.astro';
 interface Props {
 	title: string;
 	description: string;
+	keywords: string;
 	image?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+const { title, description, keywords, image = '/blog-placeholder-1.jpg' } = Astro.props;
 ---
-
-<GoogleAnalytics />
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
@@ -30,9 +29,12 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
+
 <!-- Primary Meta Tags -->
 <title>{title}</title>
+
 <meta name="title" content={title} />
+<meta name="keywords" content={keywords} />
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
@@ -48,3 +50,5 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<GoogleAnalytics />
